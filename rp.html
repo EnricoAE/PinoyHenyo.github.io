@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_main">
+        <!-- container_main -->
+        <div class="wcl" id="homeFView">
+            <!-- homeframe -->
+            <h1>Remote Play</h1>
+            <div class="header">
+                <span aria-label="Phase">[Design Phase]</span>
+                <br>
+                <span aria-label="Intruction">Set the word to guess, what category they are, and hints/considerations. <br><br> Then, click Next</span>
+            </div>
+            <ul>
+                <li>
+                    <input type="text" id="word" placeholder="Word to guess">
+                </li>
+                <li>
+                    <input type="text" id="category" placeholder="Category">
+                </li>
+                <li>
+                    <input type="text" id="lang" placeholder="English / Tagalog">
+                </li>
+                <li>
+                    <button id="btnNext2vo">Next</button>
+                </li>
+                <li>
+                    <a href="/index.html"><div class="act_button" onclick="clickAud()">Back to home</div></a>
+                </li>
+            </ul>
+        </div>
+        <div class="hvo" id="hintViewOo">
+            <!-- homeframe -->
+            <h1>Remote Play</h1>
+            <div class="header">
+                <span aria-label="Phase">[testing]</span>
+                <br>
+                <span aria-label="Intruction">Set hints <br><br> Then, click Next</span>
+            </div>
+            <ul>
+                <li>
+                    <input type="text" id="hint1" placeholder="hint 1">
+                </li>
+                <li>
+                    <input type="text" id="hint2" placeholder="hint 2">
+                </li>
+                <li>
+                    <input type="text" id="hint3" placeholder="hint 3">
+                </li>
+                <li>
+                    <input type="text" id="hint4" placeholder="hint 4">
+                </li>
+                <li>
+                    <input type="text" id="hint5" placeholder="hint 5">
+                </li>
+                <li>
+                    <button id="btnNext2vp">Next</button>
+                </li>
+                <li>
+                    <a href="/index.html"><div class="act_button" onclick="clickAud()">Back to home</div></a>
+                </li>
+            </ul>
+        </div>
+        <div class="hvp" id="hintViewPwd">
+            <!-- homeframe -->
+            <h1>Remote Play</h1>
+            <div class="header">
+                <span aria-label="Phase">[testing]</span>
+                <br>
+                <span aria-label="Intruction">Set Considerations <br><br> Then, click Next</span>
+            </div>
+            <ul>
+                <li>
+                    <input type="text" id="pwhint1" placeholder="pwede 1">
+                </li>
+                <li>
+                    <input type="text" id="pwhint2" placeholder="pwede 2">
+                </li>
+                <li>
+                    <input type="text" id="pwhint3" placeholder="pwede 3">
+                </li>
+                <li>
+                    <input type="text" id="pwhint4" placeholder="pwede 4">
+                </li>
+                <li>
+                    <input type="text" id="pwhint5" placeholder="pwede 5">
+                </li>
+                <li>
+                    <button id="btnStart">Next</button>
+                </li>
+                <li>
+                    <a href="/index.html"><div class="act_button" onclick="clickAud()">Back to home</div></a>
+                </li>
+            </ul>
+        </div>
+        <div class="RemoteUI" id="RemUI">
+            <!-- hardFrame -->
+            <h1>Remote Play</h1>
+            <div class="header">
+                <span aria-label="Phase">[testing]</span>
+                <br>
+                <span aria-label="Intruction">You can guess now</span>
+            </div>
+            <div>
+                <p id="aiRespondent">Ai is listening...</p>
+                <p id="rightAnswer" class="hiddenword">[ ----- ? ----- ]</p>
+                <input type="text" id="txtAns">
+                <button id="btnCheck">Check</button>
+            </div>
+            <div>
+                <button id="btnBack" class="backbtn">Ayoko na... hehe</button>
+            </div>
+        </div>
+    </div>
+    <script src="/rpjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container_main">
+        <!-- container_main -->
+        <div class="homeframe">
+            <h1 class="gameName">PinoyHenyo.web</h1>
+            <!-- homeframe -->
+            <div class="header">
+                <span aria-label="Phase">[Design Phase]</span>
+                <br>
+                <span aria-label="Intruction">Choose your desired game mode... or try 'em both!</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="/sd.html"><div class="act_buttonSD" role="button" id="sdBtn">Self-destruction</div></a>
+                </li>
+                <li>
+                    <a href="/rp.html"><div class="act_buttonRP" role="button" id="rpBtn">Remote Play</div></a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            const click = new Audio();
+            click.src = "/click.mp3"
+
+            document.getElementById("rpBtn").onclick = function () {
+                click.play();
+            }
+
+            document.getElementById("sdBtn").onclick = function () {
+                click.play();
+            }
+        </script>
+</body>
+</html>

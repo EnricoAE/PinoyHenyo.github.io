@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_main">
+        <!-- container_main -->
+        <div class="homeframe" id="homeFView">
+            <!-- homeframe -->
+            <h1>Self-Destruction</h1>
+            <div class="header">
+                <span aria-label="Phase">[Design Phase]</span>
+                <br>
+                <span aria-label="Intruction">You will be partnered with an AI, please choose the difficulty setting</span>
+            </div>
+            <ul>
+                <li>
+                    <button id="btnHard">Hard</button>
+                </li>
+                <li>
+                    <button id="btnMedium">Medium</button>
+                </li>
+                <li>
+                    <button id="btnEasy">Easy</button>
+                </li>
+                <li>
+                    <a href="/index.html"><div class="act_button" onclick="clickAud()">Back to home</div></a>
+                </li>
+            </ul>
+        </div>
+        <div class="Hard" id="hardView">
+            <!-- hardFrame -->
+            <h1>Hard Mode</h1>
+            <div class="header">
+                <span aria-label="Phase">[Design Phase]</span>
+                <br>
+                <span aria-label="Intruction">Haha good luck bahala ka jan</span>
+            </div>
+            <div>
+                <p id="aiRespondent">Come on champ guess, i'll try my best to asnwer</p>
+                <p id="rightAnswer" class="hiddenword">[ ----- ? ----- ]</p>
+                <input type="text" id="txtAns">
+                <button id="btnCheck">Check</button>
+            </div>
+            <div>
+                <button id="btnBack" class="backbtn">Ayoko na... hehe</button>
+            </div>
+        </div>
+        <div class="Medium" id="midView">
+            <!-- midFrame -->
+            <h1>Mid-tier Mode</h1>
+            <div class="header">
+                <span aria-label="Phase">[Design Phase]</span>
+                <br>
+                <span aria-label="Intruction">Hahahaha good luck bahala ka jan</span>
+            </div>
+            <div>
+                <p id="aiRespondentM">Come on challenger let's work this out, go!</p>
+                <p id="rightAnswerM" class="hiddenword">[ ----- ? ----- ]</p>
+                <input type="text" id="txtAnsM">
+                <button id="btnMCheck">Check</button>
+            </div>
+            <div>
+                <button id="btnMBack" class="backbtn">Ayoko na... hehe</button>
+            </div>
+        </div>
+        <div class="Easy" id="ezView">
+            <!-- easyFrame -->
+            <h1>Easy & Chill</h1>
+            <div class="header">
+                <span aria-label="Phase">[Design Phase]</span>
+                <br>
+                <span aria-label="Intruction">Calm down it's just easy</span>
+            </div>
+            <div>
+                <p id="aiRespondentE">Come on kid! guess! i'll try my best to asnwer</p>
+                <p id="rightAnswerE" class="hiddenword">[ ----- ? ----- ]</p>
+                <input type="text" id="txtAnsE">
+                <button id="btnECheck">Check</button>
+            </div>
+            <div>
+                <button id="btnEBack" class="backbtn">Ayoko na... hehe</button>
+            </div>
+        </div>
+    </div>
+    <script src="/ansChecker.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&family=Montserrat+Subrayada:wght@400;700&family=Tenali+Ramakrishna&display=swap');
+
+
+:root {
+    --ff-logo: 'Montserrat Subrayada', sans-serif;
+    --ff-bunjNeo: 'Bungee Spice', cursive;
+    --ff-bunjOpt: 'Bungee', cursive;
+    --ff-other: 'Tenali Ramakrishna', sans-serif;
+
+    --clr-primary: #F9D949;
+    --clr-secondary: #F45050;
+    --clr-accent: #fff;
+
+    --fs-xs: 1rem;
+    --fs-l: 1.5rem;
+}
+
+/* Text Styles */
+
+.gameName, h1 {
+    font-family: var(--ff-bunjNeo);
+    font-size: var(--fs-l);
+}
+
+p {
+    color: yellow;
+    font-family: var(--ff-other);
+    font-size: var(--fs-l);
+}
+
+.hiddenword {
+    font-family: var(--ff-bunjOpt);
+}
+
+/* General Styling */
+html {
+    background-image: linear-gradient(180deg, black, rgb(63, 0, 0));
+    height: 150%;
+}
+
+body {
+    /* background-image: url(/AlphaTest/media/1155025.jpg); */
+    display: grid;
+    font-family: var(--ff-bunjOpt);
+    font-size: var(--fs-xs);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+div {
+    /* border: 1px solid black; */
+    padding: 1rem;
+    text-align: center;
+    transition: 1s ease;
+}
+
+.container_main {
+    margin-inline: auto;
+    max-width: 1000px;
+}
+
+.header {
+    color: var(--clr-accent);
+    border: 5px dashed var(--clr-primary);
+    border-radius: 1rem;
+}
+
+.act_button {
+    background-color: var(--clr-secondary);
+    color: var(--clr-accent);
+    border-radius: 2rem;
+}
+
+.act_buttonSD {
+    background-color: orangered;
+    color: var(--clr-accent);
+    border-radius: 2rem;
+}
+
+.act_buttonRP {
+    background-color: orangered;
+    color: var(--clr-accent);
+    border-radius: 2rem;
+}
+
+ul, li, a{
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+input {
+    margin-block: 1rem;
+    width: 100%;
+    font-size: var(--fs-xs);
+    font-family: var(--ff-bunjOpt);
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--clr-primary);
+    color: black;
+    font-family: var(--ff-bunjOpt);
+}
+
+.backbtn {
+    background-color: var(--clr-secondary);
+    color: var(--clr-accent);
+}
+
+/* ai response:mood */
+body.red #aiRespondent, 
+body.red #aiRespondentM, 
+body.red #aiRespondentE {
+    color: #F45050;
+    transition: .5 ease;
+}
+
+body.yellow #aiRespondent, 
+body.yellow #aiRespondentM, 
+body.yellow #aiRespondentE {
+    color: orange;
+    transition: .5 ease;
+}
+
+body.green #aiRespondent, 
+body.green #aiRespondentM, 
+body.green #aiRespondentE {
+    color: rgb(71, 233, 71);
+    transition: .5 ease;
+}
+
+/* block states - if active or not - this state is default*/
+.homeframe {
+    display: block;
+}
+
+.Hard {
+    display: none;
+}
+
+.Medium {
+    display: none;
+}
+
+.Easy {
+    display: none;
+}
+
+.wcl {
+    display: block;
+}
+
+.hvo {
+    display: none;
+}
+
+.hvp {
+    display: none;
+}
+
+.RemoteUI {
+    display: none;
+}
+
+/* media queries */
+
+@media screen and (min-width: 62em) {
+    .container_main {
+        margin-inline: auto;
+        min-width: 1000px;
+    }
+}
